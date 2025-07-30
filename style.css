@@ -14,6 +14,7 @@ input, select {
   padding: 5px;                /* Add padding inside the elements */
   margin: 5px;                 /* Add spacing around the elements */
   width: 100px;                /* Set a fixed width for consistency */
+  background-color: white;     /* Ensure inputs have white background */
 }
 
 /* Style the button */
@@ -29,5 +30,5 @@ In this case, it targets the <p id="result"> in the HTML
 #result {
   font-size: 20px;             /* Make the result text larger */
   margin-top: 20px;            /* Add space above the result */
-  color: blue;                 /* Set the text color to blue */
+  color: white;                /* Changed from blue to white for better visibility */
 }
