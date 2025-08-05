@@ -1,36 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Simple Calculator</title>
-  <!-- Link to external CSS file for styling (style.css) -->
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ethan Farquharson</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Page heading -->
-  <h1>Simple Calculator</h1>
 
-  <!-- Input for the first number -->
-  <input type="number" id="num1" placeholder="First number">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse justify-content-center">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-  <!-- Dropdown menu for selecting an arithmetic operator -->
-  <select id="operator">
-    <option value="+">+</option>     <!-- Addition -->
-    <option value="-">−</option>     <!-- Subtraction -->
-    <option value="*">×</option>     <!-- Multiplication -->
-    <option value="/">÷</option>     <!-- Division -->
-    <option value="%">%</option>     <!-- Modulus -->
-  </select>
 
-  <!-- Input for the second number -->
-  <input type="number" id="num2" placeholder="Second number">
+  <div class="container my-5 py-4">
+    <div class="row align-items-center">
+      <!-- left  -->
+      <div class="col-md-5 text-center mb-4 mb-md-0">
+        <img src="images/me.jpg" alt="Ethan Farquharson" 
+             class="rounded-circle img-fluid profile-img">
+      </div>
 
-  <!-- Button to trigger the calculation function -->
-  <button onclick="calculate()">Calculate</button>
-
-  <!-- Paragraph to display the result -->
-  <p id="result"></p>
-
-  <!-- Link to the external JavaScript file (script.js) -->
+      <!-- right -->
+      <div class="col-md-7 text-center text-md-start">
+        <h1 class="display-3 mb-3">ETHAN</h1>
+        <h2 class="display-5 text-muted text-uppercase">FARQUHARSON</h2>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
