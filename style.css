@@ -1,34 +1,73 @@
-/* Style the entire page body */
 body {
-  font-family: sans-serif;     /* Use a clean, modern font */
-  text-align: center;          /* Center all content horizontally */
-  margin-top: 40px;            /* Add space at the top of the page */
-  background-color: navy;      /* Add navy background color */
-  color: white;                /* Change text color to white for better contrast */
-  min-height: 100vh;           /* Ensure background covers full viewport height */
-  padding: 20px;               /* Add some padding around content */
+  font-family: 'Arial', sans-serif;
+  background-color: #0A0A3C ;
+  color: #ffffff;
 }
 
-/* Style both input and select elements */
-input, select {
-  padding: 5px;                /* Add padding inside the elements */
-  margin: 5px;                 /* Add spacing around the elements */
-  width: 100px;                /* Set a fixed width for consistency */
-  background-color: white;     /* Ensure inputs have white background */
+.navbar {
+  background-color: #000066 !important;
+  padding: 1.5rem 0;
+  box-shadow: 0 2px 10px rgb(0, 0, 0, 0.1);
 }
 
-/* Style the button */
-button {
-  padding: 8px 15px;           /* Add vertical and horizontal padding */
+.navbar-nav {
+  gap: 2rem;
 }
 
-/* 
-Style the element with the id="result"
-The # symbol is used to select an element by its **ID**
-In this case, it targets the <p id="result"> in the HTML
-*/
-#result {
-  font-size: 20px;             /* Make the result text larger */
-  margin-top: 20px;            /* Add space above the result */
-  color: white;                /* Changed from blue to white for better visibility */
+.nav-link {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: #ffffff !important;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #666 !important;
+}
+
+.nav-link.active {
+  font-weight: 600;
+}
+
+.hero-section {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.display-1 {
+  letter-spacing: 5px;
+  font-weight: 300;
+}
+
+.letter-spacing {
+  letter-spacing: 10px;
+}
+
+.about-section {
+  max-width: 800px;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .display-1 {
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+  }
+
+  .letter-spacing {
+    letter-spacing: 5px;
+    font-size: 1.5rem;
+  }
+
+  .navbar-nav {
+    gap: 1rem;
+  }
 }
