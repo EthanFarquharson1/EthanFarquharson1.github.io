@@ -62,5 +62,32 @@
     </div>
   </div>
 
+<script>
+// Image zoom functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const images = document.querySelectorAll('.zoom-image');
+  
+  images.forEach(img => {
+    img.addEventListener('click', function(e) {
+      e.stopPropagation();
+      
+      // Close any other zoomed images
+      document.querySelectorAll('.zoom-image.zoomed').forEach(zoomedImg => {
+        if (zoomedImg !== img) zoomedImg.classList.remove('zoomed');
+      });
+      
+      // Toggle zoom on clicked image
+      this.classList.toggle('zoomed');
+    });
+  });
+  
+  // Click anywhere to close zoom
+  document.addEventListener('click', function() {
+    document.querySelectorAll('.zoom-image.zoomed').forEach(img => {
+      img.classList.remove('zoomed');
+    });
+  });
+});
+</script>
 </body>
 </html>
