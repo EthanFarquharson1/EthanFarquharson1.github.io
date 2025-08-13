@@ -5,6 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Business</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    
+    .zoom-image {
+      cursor: zoom-in;
+      transition: transform 0.3s ease;
+    }
+    .zoom-image.zoomed {
+      transform: scale(1.8);
+      cursor: zoom-out;
+      z-index: 1000;
+      position: relative;
+    }
+    
+    body.zoom-mode {
+      overflow: hidden;
+    }
+  </style>
+  
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -27,7 +45,7 @@
       <div class="col-lg-10 text-center">
         <h3 class="fw-bold mb-3">Business Concept</h3>
         <p class="lead mb-4">My Color Palette.</p>
-        <img src="Color.png" alt="Main Concept" class="img-fluid rounded shadow">
+        <img src="Color.png" alt="Main Concept" class="zoom-image img-fluid rounded shadow">
       </div>
     </div>
    
@@ -35,11 +53,11 @@
 <div class="row g-4">
       <div class="col-md-6 text-center">
         <h4 class="fw-semibold mb-3">Homepage</h4>
-        <img src="Homepage.png" alt="Homepage" class="img-fluid rounded shadow">
+        <img src="Homepage.png" alt="Homepage" class="zoom-image img-fluid rounded shadow">
       </div>
       <div class="col-md-6 text-center">
         <h4 class="fw-semibold mb-3">Messages</h4>
-        <img src="Messages.png" alt="Messages" class="img-fluid rounded shadow">
+        <img src="Messages.png" alt="Messages" class="zoom-image img-fluid rounded shadow">
       </div>
     </div>
   </div>
